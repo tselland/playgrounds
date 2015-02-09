@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="tabBar.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+</head>
+<body>
+  <ul class="tab-bar">
+    <a><li>First</li></a>
+    <a class="tab-active"><li>Second</li></a>
+    <a><li>Third</li></a>
+    <a><li>Fourth</li></a>
+    <a><li>Fifth</li></a>
+  </ul>
+
+  <script>
+    $(function() {
+      $("ul.tab-bar > a").click(function() {
+        $(this).siblings('.tab-active').removeClass('tab-active');
+        $(this).addClass('tab-active');
+      });
+    });
+  </script>
+
+
+</body>
+</html>

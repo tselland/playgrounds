@@ -1,0 +1,31 @@
+body {
+    background-color: #0A495B;
+}
+ul {
+    background-color: #142264;
+    box-shadow: 0 -2px 4px #4C4C4C;
+}
+ul.tab-bar {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+}
+
+.tab-bar a {
+    display: inline-block;
+    background-color: #142264;
+    padding: 5px 15px 5px 15px;
+    width: 150px;
+    border-radius: 3px 3px 0 0;
+    color: #8692C8;
+}
+
+.tab-bar a:hover {
+    background-color: #5967A8;
+}
+
+a.tab-active {
+    background-color: #26367E;
+    border-bottom: 2px solid #8692C8;
+}
